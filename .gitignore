@@ -1,0 +1,15 @@
+.vscode
+.vs
+
+SistemaVotaciones/bin
+SistemaVotaciones/obj
+Persistence/bin
+Persistence/obj
+Models/bin
+Models/obj
+Repository/bin
+Repository/obj
+UserManager/obj
+UserManager/bin
+/Core/bin
+/Core/obj

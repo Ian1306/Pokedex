@@ -1,0 +1,69 @@
+﻿@model POKEDEX.Models.ViewPokemon
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<div>
+   
+    <hr />
+
+    <div class="card border-primary mb-3">
+        <div class="card-header">Detalles</div>
+        <div class="card-body text-primary">
+            <dl class="row">
+
+
+
+                <div class="col-md-4">
+
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.NombrePokemon)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.NombrePokemon)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.PhotoPokemon)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.PhotoPokemon)
+                    </dd>
+                </div>
+
+                <div class="col-md-4">
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.IdTipoPokemon)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.IdTipoPokemon)
+                    </dd>
+                    <dt class="col-sm-6">
+                        @Html.DisplayNameFor(model => model.IdTipoAtaque)
+                    </dt>
+                    <dd class="col-sm-6">
+                        @Html.DisplayFor(model => model.IdTipoAtaque)
+                    </dd>
+                </div>
+
+                <div class="col-md-4">
+                </div>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.IdRegion)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.IdRegion)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdPokemon">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
